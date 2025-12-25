@@ -34,6 +34,10 @@ spinButton.addEventListener("click", () => {
     balance.textContent = userBalance;
 
     spinButton.disabled = true; 
+    spinButton.textContent = "Spinning...";
+    spinButton.style.backgroundColor = "#042449"; 
+    spinButton.style.border = "2px solid #0d4688";
+
     const interval = setInterval(() => {
         slots1.textContent = spin[Math.floor(Math.random() * spin.length)];
         slots2.textContent = spin[Math.floor(Math.random() * spin.length)];
@@ -49,10 +53,15 @@ spinButton.addEventListener("click", () => {
 
         checkWinner(r1, r2, r3);
         
-				slots1.textContent = r1;
+		slots1.textContent = r1;
         slots2.textContent = r2;
         slots3.textContent = r3;
 
+
         spinButton.disabled = false; 
+        spinButton.textContent = "SPIN";
+        spinButton.style.backgroundColor = "#0d4688"; 
+        spinButton.style.border = "2px solid #0d4688";
+
     }, 2000); 
 });
