@@ -4,7 +4,7 @@ import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 
 export default defineConfig({
-  base: '/japan-gamehw-js-vite/', //! 👈 ВАЖЛИВО: вкажіть базу
+  base: '/japan-game/', //! 👈 ВАЖЛИВО: вкажіть базу
   root: 'src',
   build: {
     rollupOptions: {
