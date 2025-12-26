@@ -1,0 +1,1 @@
+const livesImage = document.getElementsByClassName("live_img")
