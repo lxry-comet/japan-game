@@ -11,6 +11,8 @@
 
   <link rel="stylesheet" href="./main.css">
   <link rel="stylesheet" href="./mines.css">
+  <link rel="stylesheet" href="./fix.css">
+
     <title>japan-game</title>
   </head>
   <body>
@@ -28,51 +30,42 @@
 				</header>
 
 				<main class="menu">
-          <p class="lives">
-            LIVES: 
-            <span id='live_1'>
-              <img 
-            class='live_img'
-            src="./images/diamond_1x.png" 
-            alt=""
-            width='20px'
+          <p class="user">
+            <span class="userinfo"></span>
+            <img 
+            src="./images/coin.png" 
+            alt="coin"
+            width='25px,'
+            height='25px,'
             />
-            </span> 
-            <span id='live_2'>
-              <img 
-            class='live_img'
-            src="./images/diamond_1x.png" 
-            alt=""
-            width='20px'
-            />
-            </span> 
-            <span id='live_3'>
-              <img 
-            class='live_img'
-            src="./images/diamond_1x.png" 
-            alt=""
-            width='20px'
-            />
-            </span> 
-            
           </p>
-					<ul class="list-slots">
-            <li class="items-slots" id='slots_1'></li>
-            <li class="items-slots" id='slots_2'></li>
-            <li class="items-slots" id='slots_3'></li>
-            <li class="items-slots" id='slots_4'></li>
-            <li class="items-slots" id='slots_5'></li>
-            <li class="items-slots" id='slots_6'></li>
-            <li class="items-slots" id='slots_7'></li>
-            <li class="items-slots" id='slots_8'></li>
-            <li class="items-slots" id='slots_9'></li>
-            <li class="items-slots" id='slots_10'></li>
-            <li class="items-slots" id='slots_11'></li>
-            <li class="items-slots" id='slots_12'></li>
-            <li class="items-slots" id='slots_13'></li>
-            <li class="items-slots" id='slots_14'></li>
-            <li class="items-slots" id='slots_15'></li>
-            <li class="items-slots" id='slots_16'></li>
+
+          <div class="dep-info">
+            <p class="dep-text">
+              ENTER YOUR BET: 
+              <input type="number" id="dep-amount" class="dep-amount" value="100" min="100" max="10000" step="1000"/>
+            </p>
+
+            <button id="start-game">START</button>
+
+          </div>
+					<ul class="list-mines">
+            <li class="items-mines" id='slots_1'></li>
+            <li class="items-mines" id='slots_2'></li>
+            <li class="items-mines" id='slots_3'></li>
+            <li class="items-mines" id='slots_4'></li>
+            <li class="items-mines" id='slots_5'></li>
+            <li class="items-mines" id='slots_6'></li>
+            <li class="items-mines" id='slots_7'></li>
+            <li class="items-mines" id='slots_8'></li>
+            <li class="items-mines" id='slots_9'></li>
+            <!-- <li class="items-mines" id='slots_10'></li>
+            <li class="items-mines" id='slots_11'></li>
+            <li class="items-mines" id='slots_12'></li>
+            <li class="items-mines" id='slots_13'></li>
+            <li class="items-mines" id='slots_14'></li>
+            <li class="items-mines" id='slots_15'></li>
+            <li class="items-mines" id='slots_16'></li> -->
           </ul>
           
           <a href='./index.html' class="back">BACK</a>

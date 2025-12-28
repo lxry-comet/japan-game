@@ -63,5 +63,5 @@ spinButton.addEventListener("click", () => {
         spinButton.style.backgroundColor = "#0d4688"; 
         spinButton.style.border = "2px solid #0d4688";
 
-    }, 2000); 
+    }, 2000);
 });
