@@ -11,10 +11,13 @@
 
   
   
+  
+
     <title>japan-game</title>
-    <script type="module" crossorigin src="/japan-game/assets/mines-ec08dbb4.js"></script>
-    <link rel="modulepreload" crossorigin href="/japan-game/assets/modulepreload-polyfill-3cfb730f.js">
-    <link rel="stylesheet" href="/japan-game/assets/mines-eec9f98f.css">
+    <script type="module" crossorigin src="/japan-game/assets/mines-c6508bca.js"></script>
+    <link rel="modulepreload" crossorigin href="/japan-game/assets/fix-6318b4d5.js">
+    <link rel="stylesheet" href="/japan-game/assets/fix-131017ae.css">
+    <link rel="stylesheet" href="/japan-game/assets/mines-743dd813.css">
     <link rel="stylesheet" href="/japan-game/assets/main-fe6800a4.css">
   </head>
   <body>
@@ -32,51 +35,42 @@
 				</header>
 
 				<main class="menu">
-          <p class="lives">
-            LIVES: 
-            <span id='live_1'>
-              <img 
-            class='live_img'
-            src="/japan-game/assets/diamond_1x-5cab3a64.png" 
-            alt=""
-            width='20px'
+          <p class="user">
+            <span class="userinfo"></span>
+            <img 
+            src="/japan-game/assets/coin-1f6fcb52.png" 
+            alt="coin"
+            width='25px,'
+            height='25px,'
             />
-            </span> 
-            <span id='live_2'>
-              <img 
-            class='live_img'
-            src="/japan-game/assets/diamond_1x-5cab3a64.png" 
-            alt=""
-            width='20px'
-            />
-            </span> 
-            <span id='live_3'>
-              <img 
-            class='live_img'
-            src="/japan-game/assets/diamond_1x-5cab3a64.png" 
-            alt=""
-            width='20px'
-            />
-            </span> 
-            
           </p>
-					<ul class="list-slots">
-            <li class="items-slots" id='slots_1'></li>
-            <li class="items-slots" id='slots_2'></li>
-            <li class="items-slots" id='slots_3'></li>
-            <li class="items-slots" id='slots_4'></li>
-            <li class="items-slots" id='slots_5'></li>
-            <li class="items-slots" id='slots_6'></li>
-            <li class="items-slots" id='slots_7'></li>
-            <li class="items-slots" id='slots_8'></li>
-            <li class="items-slots" id='slots_9'></li>
-            <li class="items-slots" id='slots_10'></li>
-            <li class="items-slots" id='slots_11'></li>
-            <li class="items-slots" id='slots_12'></li>
-            <li class="items-slots" id='slots_13'></li>
-            <li class="items-slots" id='slots_14'></li>
-            <li class="items-slots" id='slots_15'></li>
-            <li class="items-slots" id='slots_16'></li>
+
+          <div class="dep-info">
+            <p class="dep-text">
+              ENTER YOUR BET: 
+              <input type="number" id="dep-amount" class="dep-amount" value="100" min="100" max="10000" step="1000"/>
+            </p>
+
+            <button id="start-game">START</button>
+
+          </div>
+					<ul class="list-mines">
+            <li class="items-mines" id='slots_1'></li>
+            <li class="items-mines" id='slots_2'></li>
+            <li class="items-mines" id='slots_3'></li>
+            <li class="items-mines" id='slots_4'></li>
+            <li class="items-mines" id='slots_5'></li>
+            <li class="items-mines" id='slots_6'></li>
+            <li class="items-mines" id='slots_7'></li>
+            <li class="items-mines" id='slots_8'></li>
+            <li class="items-mines" id='slots_9'></li>
+            <!-- <li class="items-mines" id='slots_10'></li>
+            <li class="items-mines" id='slots_11'></li>
+            <li class="items-mines" id='slots_12'></li>
+            <li class="items-mines" id='slots_13'></li>
+            <li class="items-mines" id='slots_14'></li>
+            <li class="items-mines" id='slots_15'></li>
+            <li class="items-mines" id='slots_16'></li> -->
           </ul>
           
           <a href='./index.html' class="back">BACK</a>
